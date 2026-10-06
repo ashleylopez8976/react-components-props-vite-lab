@@ -92,3 +92,45 @@ If the article takes 30 minutes or longer to read:
 
 There aren't tests for this feature, so you'll have to rely on running the code
 in the browser to see if your implementation works!
+
+## Completed Blog Project
+
+This React blog demonstrates reusable components, JSX, and passing data through props. Blog content comes from `src/data/blog.js`.
+
+### Run Locally
+
+Install Node.js and npm, then open a terminal in the project folder.
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the Local URL shown in the terminal.
+
+### Run Tests
+
+```bash
+npm test
+```
+
+Press `q` to exit test watch mode. All 14 provided tests passed.
+
+### Components
+
+- **App:** Passes blog data to Header, About, and ArticleList.
+- **Header:** Displays the blog name.
+- **About:** Displays the logo and description, with a default image when omitted.
+- **ArticleList:** Creates an Article for each post using its ID as a unique key.
+- **Article:** Displays the title, date, and preview, with a default date when omitted.
+
+### Blog Screenshot
+
+![Underreacted blog showing the logo, description, and three posts](images/blog-screenshot.png)
